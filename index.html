@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberHouse</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="header">
+      <div class="logo">BarberHouse</div>
+
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#masters">Мастера</a>
+        <a href="#gallery">Работы</a>
+        <a href="#booking">Запись</a>
+      </nav>
+
+      <button class="btn">Записаться</button>
+    </header>
+
+    <!-- HERO-->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>Стиль. Точность. Характерю</h1>
+        <p>Премиальный барбершоп в твоём городе</p>
+
+        <div class="hero-actions">
+          <button class="btn primary">Записаться</button>
+          <button class="btn ghost">Выбрать мастера</button>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2 class="section-title">Услуги</h2>
+      <p class="section-subtitle">Выбери свой стиль</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Стрижка</h3>
+          <p>Классическая мужская стрижка</p>
+          <span class="price">12$</span>
+        </div>
+
+        <div class="service-card">
+          <h3>Борода</h3>
+          <p>Оформление и уход за бородой</p>
+          <span class="price">5$</span>
+        </div>
+
+        <div class="service-card">
+          <h3>Комплекс</h3>
+          <p>Стрижка + борода + укладка</p>
+          <span class="price">20$</span>
+        </div>
+
+        <div class="service-card">
+          <h3>Детская</h3>
+          <p>Стильная стрижка для детей</p>
+          <span class="price">7$</span>
+        </div>
+      </div>
+    </section>
+    <!-- MASTERS -->
+    <section class="masters" id="masters">
+      <h2 class="section-title">Наши мастера</h2>
+      <p class="section-subtitle">Опытные барберы, которые знают своё дело</p>
+
+      <div class="masters-grid">
+        <div class="master-card">
+          <img
+            src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a"
+          />
+          <h3>Ли Хуан</h3>
+          <p>Senior Barber • 7 лет опыта</p>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="master-card">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+          />
+          <h3>Иван</h3>
+          <p>Fade Specialist • 5 лет опыта</p>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="master-card">
+          <img
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+          />
+          <h3>Максим</h3>
+          <p>Beard Expert • 6 лет опыта</p>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+    </section>
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <h2 class="section-title">Наши работы</h2>
+      <p class="section-subtitle">Реальные стрижки наших клиентов</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=80"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- BOOKING -->
+    <section class="booking" id="booking">
+      <h2 class="section-title">Запись онлайн</h2>
+      <p class="section-subtitle">Оставь заявку — мы перезвоним</p>
+
+      <form class="booking-form">
+        <input type="text" placeholder="Ваше имя" required />
+
+        <input type="tel" placeholder="Телефон" required />
+
+        <select required>
+          <option value="">Выберите услугу</option>
+          <option>Стрижка</option>
+          <option>Борода</option>
+          <option>Комплекс</option>
+          <option>Детская стрижка</option>
+        </select>
+
+        <input type="date" required />
+
+        <button type="submit">Записаться</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
